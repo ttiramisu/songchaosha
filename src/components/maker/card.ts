@@ -72,11 +72,11 @@ export class Card {
     cardNum: string = 'DIY 001'         // 编号
  
     isTranslate: boolean = true    // 是否自动简繁转换
-    title: string = '未知称号'      // 称号
-    name: string = '刘备'          // 武将名
+    title: string = '语特主席'      // 称号
+    name: string = '申笑宇'          // 武将名
     
     power: string = Power['宋']      // 势力
-    isLord: boolean = false        //是否为主公
+    isLord: boolean = true        //是否为主公
     heart: number = 4              // 体力值
     isHreatLimit: boolean = false  // 是否绘制体力上限
     heartLimit: number = 4         // 体力上限
@@ -86,8 +86,10 @@ export class Card {
 
     constructor() {
         this.numSkill = 2
-        this.skills.push(new Skill('仁德', '出牌阶段每名角色限一次，你可以将任意张手牌交给一名其他角色。当你于此阶段以此法给出第二张牌时，你可以视为使用一张基本牌。'))
-        this.skills.push(new Skill('激将', '主公技，当你需要使用或打出一张【杀】时，你可令其他蜀势力角色打出一张【杀】（视为由你使用或打出）。'))
+        this.skills.push(new Skill('仁德', '出牌阶段每名角色限一次，你可以将任意张手牌交给一名其他角色。并让他叫你“X”（X为任何单字称呼）'))
+        this.skills.push(new Skill('激将', '主公技，当你需要让人家干活时，你可以说：“你是XX！” (XX为任何想得出的词语)'))
+
+        // 自动使用默认插画（替换为你自己的图片路径）
     }
 
     // 添加空白技能
