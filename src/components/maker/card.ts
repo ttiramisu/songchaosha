@@ -47,12 +47,12 @@ class Illastration {
 
 // 势力
 export const Power: {[key:string]:string} = {
-    '魏': 'wei',
-    '蜀': 'shu',
-    '吴': 'wu',
-    '群': 'qun',
-    '神': 'shen',
-    '晋': 'jin'
+    '宋': 'jin',
+    '金': 'shu',
+    // '吴': 'wu',
+    // '群': 'qun',
+    // '神': 'shen',
+    // '晋': 'jin'
 }
 
 // 卡牌
@@ -75,7 +75,7 @@ export class Card {
     title: string = '未知称号'      // 称号
     name: string = '刘备'          // 武将名
     
-    power: string = Power['蜀']      // 势力
+    power: string = Power['宋']      // 势力
     isLord: boolean = false        //是否为主公
     heart: number = 4              // 体力值
     isHreatLimit: boolean = false  // 是否绘制体力上限

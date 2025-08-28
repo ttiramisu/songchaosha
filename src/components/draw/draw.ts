@@ -227,8 +227,8 @@ export function drawBottom(cf: Config, cvt: CanvasTool, card: Card) {
 
 // 绘制版本信息
 export function drawVersion(cf: Config, cvt: CanvasTool, version: string) {
-    const text = 'Lycium在线制卡器' + version
-    cvt.ctx.font = cf.version.font
-    applyText(cvt.ctx, cf.version.textStyle)
-    cvt.ctx.fillText(text, cf.version.x, cf.version.y)
+    // const text = 'Lycium在线制卡器' + version
+    // cvt.ctx.font = cf.version.font
+    // applyText(cvt.ctx, cf.version.textStyle)
+    // cvt.ctx.fillText(text, cf.version.x, cf.version.y)
 }
